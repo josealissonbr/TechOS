@@ -60,6 +60,11 @@ namespace TechOS
             {
                 Console.Clear();
             }
+            else if (input.StartsWith("Snake"))
+            {
+                Snake snakeGame = new Snake();
+                snakeGame.SnakeGameStart();
+            }
             else 
             {
                 Console.WriteLine("Command not found!");
